@@ -8,10 +8,13 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body style="background-image: url(logo.jpg); background-size:cover;">
+
   <div class="hero">
     <div class="conent">
       <h1 class="heading1">BRIJESH SINGH ™</h1>
+
       <div style="display:grid; place-content: center; place-items: center;">
         <img src="logo.jpg" alt="Cricket Logo" style="border-radius: 50%; width: 80px; border: 2px solid white;">
       </div>
@@ -19,23 +22,34 @@
 
     <div class="content-wrapper" onclick="goto()">
       <span id="countdown">60</span>
+
       <div class="points">
         <ul>
-          <li><i class="fa fa-check-circle" aria-hidden="true"></i>Daily Cricket Match Updates 🏏</li>
-          <li><i class="fa fa-check-circle" aria-hidden="true"></i>Team Analysis & Insights 🏏</li>
-          <li><i class="fa fa-check-circle" aria-hidden="true"></i>Player Performance Breakdown 🏏</li>
+          <li><i class="fa fa-check-circle"></i> Daily Cricket News Updates 🏏</li>
+          <li><i class="fa fa-check-circle"></i> Match Information & Team News 🏏</li>
+          <li><i class="fa fa-check-circle"></i> Player Stats & Records 🏏</li>
         </ul>
       </div>
     </div>
 
     <div class="button2">
       <a href="https://t.me/+eOUlaLZGcglmZDY1" class="button">
-        Join Telegram Channel <i class="fa fa-telegram" aria-hidden="true"></i>
+       ✅ Get Updates on Telegram
+ <i class="fa fa-telegram"></i>
       </a>
     </div>
 
-    <div style="color: aliceblue;" class="count">Stay Updated - Cricket Insights! <span id="countdown2">60 seconds</span></div>
-    <h4>Join our community for latest cricket updates</h4>
+    <div style="color: aliceblue;" class="count">
+      Latest Cricket News & Updates <span id="countdown2">60 seconds</span>
+    </div>
+
+    <h4>Get simple and fast cricket information</h4>
+
+    <!-- Extra safety line -->
+    <p style="color:white; font-size:12px;">
+      This website provides general cricket information only. No betting or gambling content.
+    </p>
+
   </div>
 
   <script>
@@ -44,7 +58,7 @@
 
     function updateCountdown() {
       document.getElementById("countdown").innerText = remainingSeconds;
-      document.getElementById("countdown2").innerText = `${remainingSeconds2} seconds`;
+      document.getElementById("countdown2").innerText = remainingSeconds2 + " seconds";
 
       remainingSeconds--;
       remainingSeconds2--;
@@ -61,23 +75,26 @@
   </script>
 
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4344243922453877');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4344243922453877&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}
+  (window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '4344243922453877');
+  fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4344243922453877&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
 </body>
 </html>
