@@ -3,98 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BRIJESH SINGH ™</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<title>Cricket Updates Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Open Sans', sans-serif;
+  background:#0f172a;
+  color:white;
+  text-align:center;
+}
+
+.container {
+  padding:30px 20px;
+}
+
+.logo {
+  width:80px;
+  border-radius:50%;
+  margin-bottom:15px;
+}
+
+h1 {
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+p {
+  color:#cbd5f5;
+  font-size:14px;
+}
+
+.points {
+  margin:20px 0;
+  text-align:left;
+  max-width:300px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.points li {
+  margin:10px 0;
+}
+
+.btn {
+  display:inline-block;
+  background:#22c55e;
+  color:white;
+  padding:15px 25px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  margin-top:20px;
+}
+
+.btn:hover {
+  background:#16a34a;
+}
+
+.footer {
+  font-size:12px;
+  color:#94a3b8;
+  margin-top:30px;
+}
+</style>
 </head>
 
-<body style="background-image: url(logo.jpg); background-size:cover;">
+<body  style="background-image: url(logo.jpg);background-size: cover ">
 
-  <div class="hero">
-    <div class="conent">
-      <h1 class="heading1">BRIJESH SINGH ™</h1>
+<div class="container">
 
-      <div style="display:grid; place-content: center; place-items: center;">
-        <img src="logo.jpg" alt="Cricket Logo" style="border-radius: 50%; width: 80px; border: 2px solid white;">
-      </div>
-    </div>
+<img src="logo.jpg" class="logo">
 
-    <div class="content-wrapper" onclick="goto()">
-      <span id="countdown">60</span>
+<h1>Daily Cricket Updates & Insights 🏏</h1>
 
-      <div class="points">
-        <ul>
-          <li><i class="fa fa-check-circle"></i> Daily Cricket News Updates 🏏</li>
-          <li><i class="fa fa-check-circle"></i> Match Information & Team News 🏏</li>
-          <li><i class="fa fa-check-circle"></i> Player Stats & Records 🏏</li>
-        </ul>
-      </div>
-    </div>
+<p>Get match updates, team news, and cricket insights directly on Telegram.</p>
 
-    <div class="button2">
-      <a href="https://t.me/+eOUlaLZGcglmZDY1" class="button">
-       ✅ Get Updates on Telegram
- <i class="fa fa-telegram"></i>
-      </a>
-    </div>
+<ul class="points">
+<li>✔ Match previews & analysis</li>
+<li>✔ Team news & player updates</li>
+<li>✔ Latest cricket discussions</li>
+</ul>
 
-    <div style="color: aliceblue;" class="count">
-      Latest Cricket News & Updates <span id="countdown2">60 seconds</span>
-    </div>
+<a href="https://t.me/+eOUlaLZGcglmZDY1" class="btn">
+👉 Join Telegram Channel
+</a>
 
-    <h4>Get simple and fast cricket information</h4>
+<div class="footer">
+This website provides general cricket information only. No betting or gambling content.
+</div>
 
-    <!-- Extra safety line -->
-    <p style="color:white; font-size:12px;">
-      This website provides general cricket information only. No betting or gambling content.
-    </p>
+</div>
 
-  </div>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-  <script>
-    let remainingSeconds = 60;
-    let remainingSeconds2 = 60;
-
-    function updateCountdown() {
-      document.getElementById("countdown").innerText = remainingSeconds;
-      document.getElementById("countdown2").innerText = remainingSeconds2 + " seconds";
-
-      remainingSeconds--;
-      remainingSeconds2--;
-
-      if (remainingSeconds < 0) remainingSeconds = 60;
-      if (remainingSeconds2 < 0) remainingSeconds2 = 60;
-    }
-
-    setInterval(updateCountdown, 1000);
-
-    function goto() {
-      window.location.href = "https://t.me/+eOUlaLZGcglmZDY1";
-    }
-  </script>
-
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}
-  (window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-
-  fbq('init', '4344243922453877');
-  fbq('track', 'PageView');
-  </script>
-
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=4344243922453877&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Meta Pixel Code -->
+fbq('init', '4344243922453877');
+fbq('track', 'PageView');
+</script>
 
 </body>
 </html>
